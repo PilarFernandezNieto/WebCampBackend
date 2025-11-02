@@ -1,0 +1,11 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Hora extends Model
+{
+    protected $fillable = ['hora'];
+    protected $table = 'horas';
+}

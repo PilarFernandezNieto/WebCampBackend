@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->boolean('isAdmin')->default(0);
+            $table->tinyInteger('is_admin')->default(0);
         });
     }
 
@@ -22,7 +22,8 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('isAdmin');
+            $table->dropColumn('is_admin');
         });
     }
 };
+

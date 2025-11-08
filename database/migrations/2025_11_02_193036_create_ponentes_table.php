@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('ciudad');
             $table->string('pais');
             $table->string('imagen')->nullable();
-            $table->mediumText('redes');
+            $table->mediumText('redes')->nullable();
             $table->string('areas');
             $table->timestamps();
         });

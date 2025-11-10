@@ -40,10 +40,16 @@ class PonenteController extends Controller
         ]);
 
 
-        return response()->json([
+        // return response()->json([
+        //     'message' => 'Ponente creado correctamente',
+        //     'ponente' => $ponente
+        // ], 201);
+
+        return [
+            "type" => "success",
+            "ponente" => $ponente,
             'message' => 'Ponente creado correctamente',
-            'ponente' => $ponente
-        ], 201);
+        ];
     }
 
     /**
